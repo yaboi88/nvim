@@ -1,0 +1,5 @@
+require("config.lazy")
+require("user_conf")
+require("mappings")
+require("lsp_config")
+--vim.lsp.set_log_level("debug")
