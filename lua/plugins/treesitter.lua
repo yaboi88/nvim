@@ -5,7 +5,8 @@ return {
     end,
     config = function()
 	require('nvim-treesitter.configs').setup {
-	    ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "comment" },
+	    ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "comment",
+            "rust" },
 	    highlight = {
 		    enable = true,
 	    }

@@ -9,6 +9,9 @@ vim.keymap.set( 'n', '<C-j>', '<C-w>j' )
 vim.keymap.set( 'n', '<C-k>', '<C-w>k' )
 vim.keymap.set( 'n', '<C-l>', '<C-w>l' )
 
+--nvim tree
+vim.keymap.set( 'n', '<leader>n', require('nvim-tree.api').tree.toggle )
+
 --nvim-telescope mappings
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>f', builtin.find_files, { desc = 'Telescope find files' })
