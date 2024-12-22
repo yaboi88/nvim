@@ -29,8 +29,19 @@ lspconfig.pylsp.setup{
 
 -- diagnostic settings
 vim.diagnostic.config({
-  virtual_text = false
+    virtual_text = false,
+    signs = true,
+    update_in_insert = true,
+    underline = true,
+    severity_sort = false,
+    float = {
+        border = 'rounded',
+        source = 'always',
+        header = '',
+        prefix = '',
+    },
 })
+
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
